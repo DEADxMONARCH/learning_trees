@@ -25,3 +25,10 @@ void inorder (node* node){
     cout << node->data << " ";
     inorder(node->right);
 }
+//preoder traversal of a binary tree
+void postorder (node* node){
+    if(node == NULL) return;
+    postorder(node->left);
+    postorder(node->right);
+    cout << node->data <<  " ";
+}
