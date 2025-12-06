@@ -33,23 +33,4 @@ class solution{
         }
         return ans;
     }
-
 };
-int main() {
-    node *root = new node(3);
-    root->left = new node(9);
-    root->right = new node(20);
-    root->right->left = new node(15);
-    root->right->right = new node(7);
-    solution s;
-    std::vector<std::vector<int>> result = s.levelorder(root);
-    std::cout << "Level Order Traversal:\n";
-    for (const auto& level : result) {
-        for (int val : level) {
-            std::cout << val << " ";
-        }
-        std::cout << "\n";
-    }
-
-    return 0;
-}
